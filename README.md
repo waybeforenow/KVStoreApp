@@ -4,6 +4,7 @@ Sample Tendermint application, written in C++. It's based on [the example Go app
 ## Prerequisites
 * [gRPC](https://grpc.io)
 * [protobuf](https://github.com/protocolbuffers/protobuf)
+* [immer](https://github.com/arximboldi/immer)
 * [Tendermint](https://github.com/tendermint/tendermint)
 
 ## Build
