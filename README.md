@@ -9,6 +9,7 @@ Sample Tendermint application, written in C++. It's based on [the example Go app
 
 ## Build
 ```
+git submodule update --init --recursive
 make
 ```
 
