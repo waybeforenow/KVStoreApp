@@ -3,9 +3,9 @@ LDFLAGS+=-L/usr/local/lib `pkg-config --libs protobuf grpc++`
 CPPFLAGS+=`pkg-config --cflags protobuf grpc`
 CXXFLAGS+=-std=c++14 -I.
 
-.DEFAULT_GOAL := main
+.DEFAULT_GOAL := KVStoreApp
 
-main: \
+KVStoreApp: \
 	github.com/gogo/protobuf/gogoproto/gogo.pb.o \
 	github.com/tendermint/tendermint/libs/common/types.pb.o \
 	github.com/tendermint/tendermint/crypto/merkle/merkle.pb.o \

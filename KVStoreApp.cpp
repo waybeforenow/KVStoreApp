@@ -14,7 +14,7 @@ uint32_t KVStoreApp::isValid(const std::string& tx) {
   }
   auto key = std::move(parts[0]), value = std::move(parts[1]);
 
-  auto item = this->store.find(parts[0]);
+  auto item = this->store.find(key);
   if (item == nullptr) {
     return 0;
   }
